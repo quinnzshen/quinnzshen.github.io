@@ -1,0 +1,68 @@
+.wrapper {
+  text-align: center;
+}
+
+.nav {
+}
+
+h1 {
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 13px;
+}
+
+p {
+  font-family: 'Raleway';
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.profile {
+  width: 120px;
+  height: 120px;
+  margin: 24px auto;
+  border-radius: 60px 60px;
+  background: url(../images/quinn.JPG);
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.content {
+  margin-top: 12px;
+}
+
+.text-module {
+  margin: 0 auto;
+  max-width: 360px;
+}
+
+@media screen and (min-width: 1024px) {
+  .text-module {
+    margin: 12px 24px;
+  }
+
+  .profile {
+    margin: 90px auto 0px;
+  }
+}
+
+#woodresin {
+  background: url(../images/cover.JPG);
+  background-size: cover;
+  background-position-y: 15%;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
+
+#photography {
+  background: url(../images/ex2.jpg);
+  background-size: cover;
+  background-position-y: 15%;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 300px;
+}
