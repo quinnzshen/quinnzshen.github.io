@@ -1,8 +1,41 @@
+/* CSS declarations go here */
+html, body, div, span, applet, object, iframe, p,
+h1, h2, h3, h4, h5, h6, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  letter-spacing: normal;
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
 .wrapper {
   text-align: center;
 }
 
 .nav {
+  width: 100%;
+}
+
+.showcase {
+  margin: 0;
 }
 
 h1 {
@@ -17,6 +50,10 @@ p {
   font-size: 12px;
 }
 
+a {
+  color: inherit;
+}
+
 .profile {
   width: 120px;
   height: 120px;
@@ -27,19 +64,43 @@ p {
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .content {
-  margin-top: 12px;
+  position: relative;
+  margin-bottom: 12px;
+  height: 315px;
+}
+
+.last { 
+  margin-bottom: 0 !important; 
 }
 
 .text-module {
-  margin: 0 auto;
+  margin: 24px auto;
   max-width: 360px;
 }
 
+.text-module p {
+  margin: 12px;
+}
+
+.text-module a {
+  text-decoration: underline;
+  transition: color .3s ease-out;
+}
+
+.text-module a:hover {
+  color: orange;
+}
+
 @media screen and (min-width: 1024px) {
+  .nav {
+    position: fixed;
+    width: 360px;
+    height: 100%;
+  }
+
   .text-module {
     margin: 12px 24px;
   }
@@ -47,6 +108,34 @@ p {
   .profile {
     margin: 90px auto 0px;
   }
+
+  .showcase {
+    margin-left: 360px;
+  }
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0;
+  transition: opacity .6s;
+}
+
+.content-text {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+}
+
+.content-text h1 {
+  color: white;
+  font-size: 21px;
+}
+
+.content-text p {
+  color:white;
+  text-align: left;
 }
 
 #woodresin {
@@ -54,15 +143,28 @@ p {
   background-size: cover;
   background-position-y: 15%;
   background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
 }
 
 #photography {
   background: url(../images/ex2.jpg);
   background-size: cover;
-  background-position-y: 15%;
+  background-position-y: 48%;
   background-repeat: no-repeat;
-  position: relative;
-  height: 300px;
 }
+
+#ee192 {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/_ee192/workbench.jpg);
+  background-size: cover;
+  background-position-y: 45%;
+  background-repeat: no-repeat;
+}
+
+#nokia {
+  background: url(../images/_watch/cover.jpg);
+  background-size: cover;
+  background-position-y: 33%;
+  background-repeat: no-repeat;
+}
+
+/** Hide scrollbars on Chrome, Safari, and IE10 **/
+::-webkit-scrollbar { width: 0 !important }
