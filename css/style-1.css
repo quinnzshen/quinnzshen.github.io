@@ -153,14 +153,14 @@ a {
 }
 
 #ee192 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/_ee192/workbench.jpg);
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/ee192/workbench.jpg);
   background-size: cover;
   background-position-y: 45%;
   background-repeat: no-repeat;
 }
 
 #nokia {
-  background: url(../images/_watch/cover.jpg);
+  background: url(../images/watch/cover.jpg);
   background-size: cover;
   background-position-y: 33%;
   background-repeat: no-repeat;
