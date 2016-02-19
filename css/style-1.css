@@ -70,6 +70,7 @@ a {
   position: relative;
   margin-bottom: 12px;
   height: 315px;
+  max-width: 1080px;
 }
 
 .last { 
@@ -139,16 +140,40 @@ a {
   text-align: left;
 }
 
+.content-preview {
+  position: absolute;
+  width: 100%;
+  height: 315px;
+  opacity: 0;
+  transition: opacity .45s linear;
+}
+
 #woodresin {
-  background: url(../images/cover.JPG);
+  background-image: url(../images/woodresin/cover.jpg);
   background-size: cover;
   background-position-x: 63%;
   background-position-y: 15%;
   background-repeat: no-repeat;
 }
 
+#woodresin-compressed {
+  background: url(../images/woodresin/cover.min.jpg);
+  background-position-x: 63%;
+  background-position-y: 15%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 #photography {
-  background: url(../images/ex2.jpg);
+  background: url(../images/everyday-sf/cover.jpg);
+  background-size: cover;
+  background-position-x: 72%;
+  background-position-y: 48%;
+  background-repeat: no-repeat;
+}
+
+#photography-compressed {
+  background: url(../images/everyday-sf/cover.min.jpg);
   background-size: cover;
   background-position-x: 72%;
   background-position-y: 48%;
@@ -156,7 +181,15 @@ a {
 }
 
 #ee192 {
-  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/ee192/workbench.jpg);
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/ee192/cover.jpg);
+  background-size: cover;
+  background-position-x: 63%;
+  background-position-y: 45%;
+  background-repeat: no-repeat;
+}
+
+#ee192-compressed {
+  background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0) 81%, rgba(0,0,0,1)), url(../images/ee192/cover.min.jpg);
   background-size: cover;
   background-position-x: 63%;
   background-position-y: 45%;
@@ -165,6 +198,14 @@ a {
 
 #nokia {
   background: url(../images/watch/cover.jpg);
+  background-size: cover;
+  background-position-x: 57%;
+  background-position-y: 33%;
+  background-repeat: no-repeat;
+}
+
+#nokia-compressed {
+  background: url(../images/watch/cover.min.jpg);
   background-size: cover;
   background-position-x: 57%;
   background-position-y: 33%;
