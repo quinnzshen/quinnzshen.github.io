@@ -64,6 +64,11 @@ a {
   background-position-x: 50%;
   background-position-y: 50%;
   background-repeat: no-repeat;
+  transition: box-shadow .3s ease-out;
+}
+
+.profile:hover {
+  box-shadow: 1px 1px 6px #1e262c; 
 }
 
 .content {
@@ -71,6 +76,11 @@ a {
   margin-bottom: 12px;
   height: 315px;
   max-width: 1080px;
+  transition: box-shadow .3s ease-out;
+}
+
+.content:hover {
+  box-shadow: 1px 1px 6px #1e262c; 
 }
 
 .last { 
@@ -86,8 +96,12 @@ a {
   margin: 12px;
 }
 
-.text-module a {
+.text-module p a {
   text-decoration: underline;
+  transition: color .3s ease-out;
+}
+
+.text-module h1 a {
   transition: color .3s ease-out;
 }
 
