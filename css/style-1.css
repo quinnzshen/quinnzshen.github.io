@@ -102,6 +102,12 @@ a {
   margin: 0px auto 6px;
 }
 
+@media screen and (max-width: 888px) {
+  .project-blurb {
+    margin: 0px 12px 6px;
+  }
+}
+
 .profile {
   width: 120px;
   height: 120px;
