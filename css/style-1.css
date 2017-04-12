@@ -97,6 +97,7 @@ a {
 
 .video-player {
   display: block;
+  width: 100%;
   max-width: 864px;
   margin: 0px auto 6px;
 }
