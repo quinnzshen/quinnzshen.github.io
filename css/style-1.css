@@ -26,6 +26,25 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+.center-vertically {
+  top: 50%;
+  transform: translateY(-50%);
+  position: absolute;
+}
+
+.center-horizontally {
+  left: 50%;
+  transform: translateX(-50%);
+  position: absolute;
+}
+
+.triangle {
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  width: 9px; height: 9px;
+  transform: rotate(-45deg);
+}
+
 .wrapper {
   text-align: center;
 }
@@ -54,6 +73,34 @@ a {
   color: inherit;
 }
 
+.project-blurb {
+  max-width: 864px;
+  margin: 0px auto 6px;
+}
+
+.project-blurb h1 {
+  text-align: left;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.project-blurb p {
+  text-align: left;
+  font-size: 15px;
+  line-height: 150%;
+}
+
+.caption p {
+  text-align: center;
+  font-size: 13px;
+}
+
+.video-player {
+  display: block;
+  max-width: 864px;
+  margin: 0px auto 6px;
+}
+
 .profile {
   width: 120px;
   height: 120px;
@@ -67,19 +114,15 @@ a {
   transition: box-shadow .3s ease-out;
 }
 
-.profile:hover {
-  box-shadow: 1px 1px 6px #1e262c; 
-}
-
 .content {
   position: relative;
-  margin-bottom: 12px;
+  margin: 0px auto 12px;
   height: 315px;
   max-width: 1080px;
   transition: box-shadow .3s ease-out;
 }
 
-.content:hover {
+.clickable-img:hover {
   box-shadow: 1px 1px 6px #1e262c; 
 }
 
@@ -98,15 +141,18 @@ a {
 
 .text-module p a {
   text-decoration: underline;
+}
+
+.highlight a {
   transition: color .3s ease-out;
 }
 
-.text-module h1 a {
-  transition: color .3s ease-out;
-}
-
-.text-module a:hover {
+.highlight a:hover {
   color: orange;
+}
+
+.underline a {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1024px) {
@@ -114,6 +160,15 @@ a {
     position: fixed;
     width: 360px;
     height: 100%;
+    top: 0;
+    left: 0;
+  }
+
+  .content-nav {
+    margin-top: 0px;
+    opacity: 0;
+    transition: opacity 1.5s;
+    z-index: -1;
   }
 
   .text-module {
@@ -126,6 +181,10 @@ a {
 
   .showcase {
     margin-left: 360px;
+  }
+
+  .showcase-nav {
+    margin-top: 222px
   }
 }
 
@@ -161,6 +220,32 @@ a {
   max-width: 1080px;
   opacity: 0;
   transition: opacity .45s linear;
+}
+
+.showcase-content {
+  position: relative;
+  margin-bottom: 24px;
+  height: 654px;
+  max-width: 1080px;
+  background-size: cover;
+  background-position-x: 50%;
+  background-position-y: 50%;
+}
+
+.showcase-text {
+  position: fixed;
+  width: 360px;
+  height: 100%;
+  top: 0px;
+}
+
+.trigger {
+  position: absolute;
+  bottom: 300px;
+}
+
+#nav-1 {
+  transition: opacity 1.5s;
 }
 
 #woodresin {
