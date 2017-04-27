@@ -95,6 +95,13 @@ a {
   font-size: 13px;
 }
 
+.project-image {
+  display: block;
+  width: 100%;
+  max-width: 864px;
+  margin: 0px auto 6px;
+}
+
 .video-player {
   display: block;
   width: 100%;
