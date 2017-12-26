@@ -130,18 +130,18 @@ a {
 
 .content {
   position: relative;
-  margin: 0px auto 12px;
+  margin: 0px 0px 12px;
   height: 315px;
   max-width: 1080px;
   transition: box-shadow .3s ease-out;
 }
 
 .clickable-img:hover {
-  box-shadow: 1px 1px 6px #1e262c; 
+  box-shadow: 1px 1px 6px #1e262c;
 }
 
-.last { 
-  margin-bottom: 0 !important; 
+.last {
+  margin-bottom: 0 !important;
 }
 
 .text-module {
