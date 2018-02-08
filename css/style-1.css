@@ -130,7 +130,7 @@ a {
 
 .content {
   position: relative;
-  margin: 0px 0px 12px;
+  margin: 0px auto 12px;
   height: 315px;
   max-width: 1080px;
   transition: box-shadow .3s ease-out;
