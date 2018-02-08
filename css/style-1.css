@@ -86,7 +86,6 @@ a {
 .project-blurb {
   max-width: 864px;
   margin: 0px auto 6px;
-  padding-top: 6px;
 }
 
 .project-blurb h1 {
@@ -114,7 +113,7 @@ a {
   display: block;
   width: 100%;
   max-width: 864px;
-  margin: 0px auto 6px;
+  margin: 0px auto 0px;
 }
 
 .video-player {
