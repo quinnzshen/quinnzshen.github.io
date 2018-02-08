@@ -26,6 +26,10 @@ footer, header, hgroup, menu, nav, section {
     display: block;
 }
 
+body {
+  background-color: #e9ebee;
+}
+
 .center-vertically {
   top: 50%;
   transform: translateY(-50%);
@@ -73,6 +77,13 @@ a {
   color: inherit;
 }
 
+.project {
+  width: 80%;
+  margin: 0px auto;
+  max-width: 1080px;
+  background-color: white;
+}
+
 .project-blurb {
   max-width: 864px;
   margin: 0px auto 6px;
@@ -93,6 +104,10 @@ a {
 .caption p {
   text-align: center;
   font-size: 13px;
+}
+
+.footer {
+  padding-bottom: 30px;
 }
 
 .project-image {
