@@ -145,7 +145,7 @@ a {
 
 .content {
   position: relative;
-  margin: 0px auto 12px;
+  margin: 0px auto 12px 0px;
   height: 315px;
   max-width: 1080px;
   transition: box-shadow .3s ease-out;
